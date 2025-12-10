@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumimix</title>
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Lumimix" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+</head>
+<body>
+    <header class="header">
+        <a href="/index.html" class="logo">
+            <img src="/assets/icons/Logo.svg" alt="Logo Lumimix" loading="lazy" />
+        </a>
+        <button class="menu-toggle" aria-label="Menu de navigation" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </button>
+        <nav class="nav" aria-label="Navigation principale">
+            <ul class="nav-list">
+                <li><a href="/a-propos.html" class="nav-link">À propos</a></li>
+                <li><a href="/programme.html" class="nav-link">Programme</a></li>
+                <li><a href="/artistes.html" class="nav-link">Artistes</a></li>
+                <li><a href="/scene.html" class="nav-link">Scènes</a></li>
+                <li><a href="/infos-pratiques.html" class="nav-link">Infos pratiques</a></li>
+                <li><a href="/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1 class="title">Scène principale</h1>
+        </div>
+
+        <nav class="nav" aria-label="Navigation boutons scènes">
+            <ul class="nav-list">
+                <li>
+                    <a href="/scene.html" class="nav-link">
+                        <img src="assets/icons/Fleche_gauche.svg" alt="Flèche gauche"/> Retour aux artistes
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="scene-section" aria-labelledby="scene-title">
+            <img src="assets/img/scene-principale-presentation.avif" alt="Photo de la scène principale" class="scene-image" loading="lazy" />
+
+            <div class="scene-presentation">
+                <header class="section-header">
+                    <p>Scène principale</p>
+                </header>
+
+                <section class="about-scene" aria-labelledby="about-title">
+                    <header class="section-header">
+                        <h2 id="about-title">À propos de la scène</h2>
+                    </header>
+                    <div class="about-content">
+                        <p>
+                            La scène principale du festival accueille les têtes d'affiche dans un cadre exceptionnel. Équipée d'un sound system de 60kW et d'un écran LED géant, elle offre une expérience sonore et visuelle immersive.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="scene-section" aria-labelledby="scene-title">
+            <div class="scene-presentation">
+                <header class="section-header">
+                    <p>Programmation</p>
+                </header>
+
+                <section class="programme" aria-label="Programme du festival">
+                    <div class="programmation-list" role="list">
+                        <ul class="programme-items" role="list">
+                            <li class="programme-item">
+                                <h3 class="artist-name">Irie Meadow</h3>
+                                <span class="time"><img src="assets/icons/Horloge.svg" alt="Heure"/> 19:00</span>
+                                <span class="location"><img src="assets/icons/Calendrier.svg" alt="Date"/> Vendredi 7 Août</span>
+                                <img src="assets/img/Irie-programme.avif" alt="Irie Meadow" class="artist-image" loading="lazy" />
+                            </li>
+                            <li class="programme-item">
+                                <h3 class="artist-name">King Subsonik</h3>
+                                <span class="time"><img src="assets/icons/Horloge.svg" alt="Heure"/> 22:00</span>
+                                <span class="location"><img src="assets/icons/Calendrier.svg" alt="Date"/> Samedi 8 Août</span>
+                                <img src="assets/img/king-programme.avif" alt="King Subsonik" class="artist-image" loading="lazy" />
+                            </li>
+                            <li class="programme-item">
+                                <h3 class="artist-name">Nova Shanti</h3>
+                                <span class="time"><img src="assets/icons/Horloge.svg" alt="Heure"/> 22:30</span>
+                                <span class="location"><img src="assets/icons/Calendrier.svg" alt="Date"/> Dimanche 9 Août</span>
+                                <img src="assets/img/nova-programme.avif" alt="Nova Shanti" class="artist-image" loading="lazy" />
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="/index.html" class="footer-logo">
+          <img alt="Logo Lumimix" src="/assets/icons/Logo.svg" loading="lazy" />
+          <p>Lumimix</p>
+        </a>
+        <nav class="footer-nav" aria-label="Navigation du footer">
+          <ul class="footer-nav-list" role="list">
+            <li role="listitem"><a href="/programme.html" class="footer-nav-link">Programme</a></li>
+            <li role="listitem"><a href="/artistes.html" class="footer-nav-link">Artistes</a></li>
+            <li role="listitem"><a href="/scene.html" class="footer-nav-link">Scènes</a></li>
+            <li role="listitem"><a href="/infos-pratiques.html" class="footer-nav-link">Infos pratiques</a></li>
+            <li role="listitem"><a href="/contact.html" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-social">
+        <p class="social-title" id="social-title">Suivez-nous</p>
+        <div class="social-links" aria-labelledby="social-title" role="list">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-link" role="listitem">
+            <img alt="Facebook" src="/assets/icons/Facebook.svg" loading="lazy" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-link" role="listitem">
+            <img alt="Instagram" src="/assets/icons/Instagram.svg" loading="lazy" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener" class="social-link" role="listitem">
+            <img alt="Twitter" src="/assets/icons/Twitter.svg" loading="lazy" />
+          </a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener" class="social-link" role="listitem">
+            <img alt="Youtube" src="/assets/icons/Youtube.svg" loading="lazy" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr />
+        <p class="footer-copyright">© Lumimix 2026. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
+</html>
