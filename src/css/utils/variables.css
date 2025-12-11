@@ -1,0 +1,28 @@
+:root {
+  --beige: #e2bb84;
+  --blanc: #ffffff;
+  --fond: #fff3e2;
+  --fuchsia: #71143b;
+  --fuchsia2: #71143bd0;
+  --noir: #000000;
+  --orange: #fe7e00;
+  --orange2: #fe7f00d3;
+  --vert: #237951;
+
+  --font-size-10: 0.625rem;
+  --font-size-15: 0.9375rem;
+  --font-size-20: 1.25rem;
+  --font-size-35: 2.1875rem;
+  --font-size-40: 2.5rem;
+  --font-weight-regular: 25rem;
+  --font-weight-bold: 43.75rem;
+  --letter-spacing-0: 0rem;
+  --line-height-53: 3.3125rem;
+  --list-spacing-0: 0rem;
+  --paragraph-indent-0: 0rem;
+  --paragraph-spacing-0: 0rem;
+  --paragraph-spacing-15: 0.9375rem;
+
+  --font-family-climate-crisis: Climate Crisis;
+  --font-family-cuprum: Cuprum;
+}

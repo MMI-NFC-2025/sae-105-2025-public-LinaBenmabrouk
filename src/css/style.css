@@ -1,0 +1,10 @@
+@import "vendors/normalize.css";  
+@import "utils/variables.css";
+@import "base/main.css";
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "components/card.css";
+@import "components/button.css";
+@import "base/media.css";
+@import "components/hero.css";
+@import "components/menu.css";

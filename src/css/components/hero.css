@@ -1,0 +1,93 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  background-image: linear-gradient(180deg, var(--orange2) 0%, var(--fuchsia2) 100%),
+    url("/assets/img/hero.avif");
+  color: var(--noir);
+}
+
+.hero--other {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  background: linear-gradient(180deg, var(--orange) 0%, var(--fuchsia) 100%);
+  color: var(--beige);
+}
+
+
+.hero .title {
+  font-family: var(--font-family-climate-crisis), cursive;
+  font-size: clamp(3rem, 10vw, 8rem);
+  color: var(--fuchsia);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.hero .location {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  margin-bottom: 0rem;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.hero .dates {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.2rem 3rem;
+  background-color: var(--vert);
+  color: var(--blanc);
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hero-button img {
+  width: 1.5rem;
+  height: auto;
+  filter: invert(1);
+}
+
+
+.hero-button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(254, 126, 0, 0.6);
+  background-color: #ff8c1a;
+}
+
+
+.hero-title {
+  font-family: var(--font-family-climate-crisis), cursive;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  color: var(--blanc);
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  opacity: 0.95;
+  font-weight: 500;
+  max-width: 800px;
+  margin: 0 auto;
+}

@@ -1,0 +1,126 @@
+/* Button styles based on PDF design */
+
+button,
+.button {
+  font-family: var(--font-family-cuprum), sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--vert);
+  color: var(--blanc);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #1a5a3a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(35, 121, 81, 0.3);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: var(--orange);
+  color: var(--blanc);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background-color: #e67200;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(254, 126, 0, 0.3);
+}
+
+/* Outline Button */
+.btn-outline {
+  background-color: transparent;
+  color: var(--vert);
+  padding: 1rem 2rem;
+  border: 2px solid var(--vert);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  background-color: var(--vert);
+  color: var(--blanc);
+  transform: translateY(-2px);
+}
+
+/* Icon Button */
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-icon:hover {
+  transform: scale(1.1);
+}
+
+.btn-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Link Button */
+.btn-link {
+  background: none;
+  border: none;
+  color: var(--vert);
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-link:hover {
+  color: var(--orange);
+  gap: 0.75rem;
+}
+
+/* Button sizes */
+.btn-sm {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+.btn-lg {
+  padding: 1.3rem 2.5rem;
+  font-size: 1.2rem;
+}
+
+/* Button full width */
+.btn-block {
+  width: 100%;
+  text-align: center;
+}
+
+/* Disabled state */
+button:disabled,
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

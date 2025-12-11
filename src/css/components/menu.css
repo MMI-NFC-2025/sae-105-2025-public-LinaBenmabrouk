@@ -1,0 +1,118 @@
+/* Updated menu styles to match PDF design with green background */
+
+/* MENU Navigation */
+.nav {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+  background-color: var(--vert);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-list {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--blanc);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  transform: translateX(10px);
+  color: var(--beige);
+}
+
+/* Cascade animation */
+.nav li {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.nav li:nth-child(1) {
+  transition-delay: 0.05s;
+}
+.nav li:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.nav li:nth-child(3) {
+  transition-delay: 0.15s;
+}
+.nav li:nth-child(4) {
+  transition-delay: 0.2s;
+}
+.nav li:nth-child(5) {
+  transition-delay: 0.25s;
+}
+.nav li:nth-child(6) {
+  transition-delay: 0.3s;
+}
+
+.nav:not(.active) li {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  background: var(--fuchsia);
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  border-radius: 2px;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle span:nth-child(1) {
+  bottom: 8px;
+}
+
+.menu-toggle span:nth-child(2) {
+  top: 8px;
+}
+
+/* Animation burger to X */
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: rotate(45deg);
+  bottom: 50%;
+  margin-bottom: -1.5px;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  transform: rotate(-45deg);
+  top: 50%;
+  margin-top: -1.5px;
+}
