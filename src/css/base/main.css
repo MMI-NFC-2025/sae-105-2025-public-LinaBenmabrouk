@@ -133,6 +133,39 @@ img {
   transition: all 0.3s ease;
 }
 
+.about-artist {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.about-artist p {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0rem;
+  color: var(--noir);
+}
+
+.artist-media {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.artist-media p {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0rem;
+  color: var(--noir);
+}
 
 .about-section {
   max-width: 1200px;
@@ -240,8 +273,8 @@ img {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 1rem 2rem;
-  background-color: var(--orange);
-  color: var(--blanc);
+  background-color: var(--vert);
+  color: var(--orange);
   border-radius: 8px;
   font-weight: 700;
   cursor: pointer;
@@ -256,6 +289,7 @@ img {
 .download-program img {
   width: 24px;
   height: 24px;
+  color: var(--orange);
 }
 
 .programme {
@@ -287,6 +321,7 @@ img {
 .programme-items {
   display: grid;
   gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .programme-item {
@@ -296,9 +331,9 @@ img {
   align-items: center;
   padding: 1.5rem;
   background-color: var(--blanc);
-  border-radius: 12px;
-  border: 2px solid var(--beige);
+  border-radius: 15px;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 12px var(--noir);
 }
 
 .programme-item:hover {
@@ -588,39 +623,67 @@ img {
   line-height: 1.6;
 }
 
-.faq-section {
-  margin-top: 3rem;
+.FAQ-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 2rem;
 }
 
-.faq-list {
-  display: grid;
-  gap: 1rem;
+.FAQ-section .section-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-family-climate-crisis), cursive;
+  font-size: 2rem;
+  color: var(--vert);
+  margin-bottom: 2rem;
 }
 
-.faq-item {
+.FAQ-section details {
   background-color: var(--blanc);
   border: 2px solid var(--beige);
   border-radius: 12px;
-  padding: 1.5rem;
-  cursor: pointer;
+  margin-bottom: 1rem;
+  overflow: hidden;
   transition: all 0.3s ease;
 }
 
-.faq-item:hover {
+.FAQ-section details[open] {
   border-color: var(--vert);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.faq-question {
+.FAQ-section summary {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  cursor: pointer;
+  padding: 1.5rem;
   font-weight: 700;
   font-size: 1.1rem;
+  list-style: none; /* enlève le triangle par défaut */
 }
 
-.faq-question img {
+.FAQ-section summary::-webkit-details-marker {
+  display: none; /* enlève le marker natif */
+}
+
+.FAQ-section summary img {
   width: 24px;
   height: 24px;
+  transition: transform 0.3s ease;
+}
+
+/* Flèche qui pivote quand ouvert */
+.FAQ-section details[open] summary img {
+  transform: rotate(180deg);
+}
+
+.FAQ-section details div {
+  padding: 0 1.5rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--noir);
 }
 
 .contact-section {
@@ -630,10 +693,9 @@ img {
 }
 
 .contact-form {
-  background-color: var(--blanc);
+  background-color: var(--beige);
   padding: 3rem;
   border-radius: 12px;
-  border: 2px solid var(--beige);
 }
 
 .form-group {
@@ -642,7 +704,7 @@ img {
 
 .form-group label {
   display: block;
-  font-weight: 700;
+  font-weight: 150;
   margin-bottom: 0.5rem;
   color: var(--noir);
 }
@@ -661,7 +723,7 @@ img {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--vert);
+  border-color: var(--orange);
 }
 
 .form-group textarea {
@@ -669,24 +731,32 @@ img {
   resize: vertical;
 }
 
-.submit-button {
-  width: 100%;
-  padding: 1.2rem;
-  background-color: var(--vert);
-  color: var(--blanc);
+.btn--primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--orange);
+  color: var(--fuchsia);
   border: none;
   border-radius: 8px;
   font-weight: 700;
   font-size: 1.1rem;
+  padding: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.submit-button:hover {
-  background-color: #1a5a3a;
+.btn--primary:hover {
+  background-color: var(--orange);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(35, 121, 81, 0.3);
 }
+
+.btn--full {
+  width: 100%;
+}
+
 
 .artist-detail {
   max-width: 1200px;

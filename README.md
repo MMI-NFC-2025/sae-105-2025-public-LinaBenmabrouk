@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : BEN MABROUK
+- PRÉNOM : Lina
+- GROUPE : B2
+- URL du site : https://starlit-arithmetic-a7e946.netlify.app/.  
+- URL FIGMA : https://www.figma.com/design/CyiV1z6T4mBwPPOKr72HSD/SAE105_Lina_BEN-MABROUK?node-id=1-118&t=uPMUQjFvXsfrGbDM-1
 
 ## Sujet
 

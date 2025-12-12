@@ -23,6 +23,15 @@
   color: var(--beige);
 }
 
+.hero--other .title {
+  font-family: var(--font-family-climate-crisis), cursive;
+  font-size: clamp(3rem, 10vw, 8rem);
+  color: var(--blanc);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
 
 .hero .title {
   font-family: var(--font-family-climate-crisis), cursive;

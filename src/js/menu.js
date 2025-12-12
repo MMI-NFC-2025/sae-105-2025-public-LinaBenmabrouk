@@ -1,3 +1,5 @@
+/* menu disponible sur toutes les pages : https://starlit-arithmetic-a7e946.netlify.app/ */
+
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".nav");

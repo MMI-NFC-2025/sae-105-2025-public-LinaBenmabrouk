@@ -1,3 +1,7 @@
+/* carousel disponible en bas de l'accueil https://starlit-arithmetic-a7e946.netlify.app/ */
+
+
+
 const carousel = document.querySelector(".carousel");
   const items = document.querySelectorAll(".carousel-item");
 
