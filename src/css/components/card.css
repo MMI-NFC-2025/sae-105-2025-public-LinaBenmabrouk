@@ -53,7 +53,7 @@
 }
 
 .card-button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   color: var(--orange);
@@ -63,6 +63,10 @@
   transition: all 0.3s ease;
   background-color: var(--vert);
   border-radius: 1rem;
+  padding: 0.8rem 1.2rem;
+  width: fit-content;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .card:hover .card-button {
@@ -78,6 +82,7 @@
 .card:hover .card-button img {
   transform: translateX(4px);
 }
+
 
 /* Artist Card Variant */
 .artist-card {
