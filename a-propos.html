@@ -29,6 +29,7 @@
         <button class="menu-toggle" aria-label="Menu de navigation" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
         </button>
         <nav class="nav" aria-label="Navigation principale">
             <ul class="nav-list" role="list">
@@ -68,9 +69,11 @@
                 <p>
                     Né d’une passion commune pour la culture sound system et le dub, Lumimix s’est imposé au fil des années comme un rendez-vous majeur de la scène européenne. Ce qui était d’abord une session intimiste dans un entrepôt lyonnais a progressivement grandi pour devenir l’un des rassemblements dub les plus reconnus en France.
                 </p>
+                <br>
                 <p>
                     Basé sur la Presqu’île du Malsaucy à Belfort, Lumimix réunit des figures incontournables du dub mondial des pionniers aux talents émergents pour célébrer une culture vibrante, guidée par l’expérimentation sonore, le partage et la puissance des basses fréquences.
                 </p>
+                <br>
                 <p>
                     Édition après édition, le festival continue de créer des moments forts, de fédérer une communauté passionnée et de transmettre l’héritage du sound system à des publics toujours plus curieux.
                 </p>
@@ -79,33 +82,35 @@
 
         <img alt="Festival Lumimix" src="assets/img/histoire.avif" class="about-image" loading="lazy" />
 
-        <section class="team-section" aria-labelledby="team-title">
+        <section class="team" aria-labelledby="team-title">
             <header class="section-header">
                 <h3 id="team-title">Notre équipe</h3>
             </header>
-            <ul class="cards-list" role="list">
-                <li class="card" role="listitem">
-                    <img alt="Marcus Johnson, Directeur Artistique" src="assets/img/marcus.avif" class="card-image" loading="lazy" />
-                    <p class="card-title">Marcus Johnson</p>
-                    <p class="card-description">Directeur Artistique</p>
+            <ul class="team-list" role="list">
+                <li class="team-member" role="listitem">
+                    <img alt="Marcus Johnson, Directeur Artistique" src="assets/img/marcus.avif" class="member-photo" loading="lazy" />
+                    <p class="member-name">Marcus Johnson</p>
+                    <p class="member-role">Directeur Artistique</p>
                 </li>
-                <li class="card" role="listitem">
-                    <img alt="Sophie Dubois, Directrice Générale" src="assets/img/Sophie.avif" class="card-image" loading="lazy" />
-                    <p class="card-title">Sophie Dubois</p>
-                    <p class="card-description">Directrice Générale</p>
+                <li class="team-member" role="listitem">
+                    <img alt="Sophie Dubois, Directrice Générale" src="assets/img/Sophie.avif" class="member-photo" loading="lazy" />
+                    <p class="member-name">Sophie Dubois</p>
+                    <p class="member-role">Directrice Générale</p>
                 </li>
-                <li class="card" role="listitem">
-                    <img alt="Baptiste Martin, Responsable Technique" src="assets/img/Baptiste.avif" class="card-image" loading="lazy" />
-                    <p class="card-title">Baptiste Martin</p>
-                    <p class="card-description">Responsable Technique</p>
+                <li class="team-member" role="listitem">
+                    <img alt="Baptiste Martin, Responsable Technique" src="assets/img/Baptiste.avif" class="member-photo" loading="lazy" />
+                    <p class="member-name">Baptiste Martin</p>
+                    <p class="member-role">Responsable Technique</p>
                 </li>
-                <li class="card" role="listitem">
-                    <img alt="Aminata Diallo, Responsable Communication" src="assets/img/Aminata.avif" class="card-image" loading="lazy" />
-                    <p class="card-title">Aminata Diallo</p>
-                    <p class="card-description">Responsable Communication</p>
+                <li class="team-member" role="listitem">
+                    <img alt="Aminata Diallo, Responsable Communication" src="assets/img/Aminata.avif" class="member-photo" loading="lazy" />
+                    <p class="member-name">Aminata Diallo</p>
+                    <p class="member-role">Responsable Communication</p>
                 </li>
             </ul>
-            <p>Notre équipe est composée de passionnés bénévoles et professionnels qui travaillent toute l'année pour vous offrir la meilleure expérience possible. Plus de 100 personnes sont mobilisées pendant le festival pour assurer votre sécurité, votre confort et votre plaisir.</p>
+            <p class="team-description">
+                Notre équipe est composée de passionnés bénévoles et professionnels qui travaillent toute l'année pour vous offrir la meilleure expérience possible. Plus de 100 personnes sont mobilisées pendant le festival pour assurer votre sécurité, votre confort et votre plaisir.
+            </p>
         </section>
 
         <section class="values-section" aria-labelledby="values-title">
@@ -128,11 +133,13 @@
             </div>
         </section>
 
-        <section class="anniversary-section" aria-labelledby="anniversary-title">
+        <section class="cta-section" aria-labelledby="cta-title">
             <header class="section-header">
-                <h3 id="anniversary-title">Édition 2026 : Un Festival en Pleine Évolution</h3>
+                <h3 id="cta-title">Édition 2026 : Un Festival en Pleine Évolution</h3>
             </header>
-            <p>Pour célébrer notre 10e anniversaire, nous avons préparé une édition exceptionnelle qui rassemble les plus grands noms du dub mondial. 3 jours, 3 scènes, 8 artistes légendaires et des milliers de bassheads réunis dans la plus pure tradition sound system.</p>
+            <p>
+                Pour célébrer notre 10e anniversaire, nous avons préparé une édition exceptionnelle qui rassemble les plus grands noms du dub mondial. 3 jours, 3 scènes, 8 artistes légendaires et des milliers de bassheads réunis dans la plus pure tradition sound system.
+            </p>
         </section>
     </main>
 
@@ -180,5 +187,6 @@
         </div>
     </footer>
     <script src="src/js/script.js"></script>
+    <script src="src/js/menu.js"></script>
   </body>
 </html>

@@ -1,5 +1,3 @@
-/* Button styles based on PDF design */
-
 button,
 .button {
   font-family: var(--font-family-cuprum), sans-serif;
@@ -9,7 +7,6 @@ button,
   outline: none;
 }
 
-/* Primary Button */
 .btn-primary {
   background-color: var(--vert);
   color: var(--blanc);
@@ -26,7 +23,6 @@ button,
   box-shadow: 0 4px 12px rgba(35, 121, 81, 0.3);
 }
 
-/* Secondary Button */
 .btn-secondary {
   background-color: var(--orange);
   color: var(--blanc);
@@ -43,7 +39,6 @@ button,
   box-shadow: 0 4px 12px rgba(254, 126, 0, 0.3);
 }
 
-/* Outline Button */
 .btn-outline {
   background-color: transparent;
   color: var(--vert);
@@ -61,7 +56,6 @@ button,
   transform: translateY(-2px);
 }
 
-/* Icon Button */
 .btn-icon {
   background-color: transparent;
   border: none;
@@ -82,7 +76,6 @@ button,
   height: 24px;
 }
 
-/* Link Button */
 .btn-link {
   background: none;
   border: none;
@@ -100,7 +93,6 @@ button,
   gap: 0.75rem;
 }
 
-/* Button sizes */
 .btn-sm {
   padding: 0.6rem 1.2rem;
   font-size: 0.9rem;
@@ -111,13 +103,11 @@ button,
   font-size: 1.2rem;
 }
 
-/* Button full width */
 .btn-block {
   width: 100%;
   text-align: center;
 }
 
-/* Disabled state */
 button:disabled,
 .button:disabled {
   opacity: 0.5;

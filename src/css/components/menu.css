@@ -87,7 +87,8 @@
 
 
 .menu-toggle[aria-expanded="true"] span:nth-child(1) {
-  transform: rotate(45deg) translateY(8px);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .menu-toggle[aria-expanded="true"] span:nth-child(2) {
@@ -95,7 +96,8 @@
 }
 
 .menu-toggle[aria-expanded="true"] span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 body.menu-open {

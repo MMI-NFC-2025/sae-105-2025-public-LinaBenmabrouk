@@ -33,8 +33,9 @@ img {
 }
 
 .section-header {
-  text-align: center;
-  margin-bottom: 3rem;
+  text-align: left;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
 }
 
 .section-header h3 {
@@ -46,7 +47,7 @@ img {
 
 .cta-section {
   background-image: linear-gradient(180deg, var(--orange) 0%, var(--fuchsia) 100%);
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
   color: var(--blanc);
 }
@@ -55,6 +56,7 @@ img {
   color: var(--blanc);
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .cta-subtitle {
@@ -129,6 +131,31 @@ img {
   object-fit: contain;
   opacity: 0.7;
   transition: all 0.3s ease;
+}
+
+
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0rem;
+  color: var(--noir);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
 }
 
 .cards-container {
